@@ -59,7 +59,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://id-year-detection-using-computer-vi.vercel.app/"
 ]
 
-ALOOWED_HOSTS = ["id-year-detection-using-computer-vision.onrender.com"]
+ALLOWED_HOSTS = ["id-year-detection-using-computer-vision.onrender.com"]
 
 CORS_ALLOW_CREDENTIALS = True
 
