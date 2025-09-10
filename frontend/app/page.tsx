@@ -9,7 +9,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/hooks/use-toast"
 
 // ✅ Use env variable (can change easily without touching code)
-const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000/detect/"
+const backendUrl = "https://id-year-detection-using-computer-vision.onrender.com/detect/" || process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000/detect/" 
+console.log("Backend URL:", process.env.NEXT_PUBLIC_BACKEND_URL);
 
 export default function Home() {
   const [detectedColor, setDetectedColor] = useState<string>("")
