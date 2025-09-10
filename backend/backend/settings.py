@@ -25,7 +25,14 @@ SECRET_KEY = 'django-insecure-^(1&1u92q&j^4c6j2-&cm@%+fcrgtf)=fgp$rt5ivmxcl*jl$(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://id-year-detection-using-computer-vi.vercel.app"
+]
+
+ALLOWED_HOSTS = ["*"]
+
+CORS_ALLOW_CREDENTIALS = True
 
 
 # Application definition
@@ -53,15 +60,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "https://id-year-detection-using-computer-vi.vercel.app/"
-]
-
-ALLOWED_HOSTS = ["id-year-detection-using-computer-vision.onrender.com"]
-
-CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'backend.urls'
 
